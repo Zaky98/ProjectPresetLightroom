@@ -4,10 +4,14 @@
     android:layout_height="match_parent"
     tools:context="com.example.projectpresetlightroom.fragements.MyCollection">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView5"
+        android:layout_width="190dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="40dp"
+        android:text="KALSDASKLDLSAKN"
+        android:textColor="@color/dot_light_screen1"
+        android:textAlignment="center"
+        />
 
 </FrameLayout>
