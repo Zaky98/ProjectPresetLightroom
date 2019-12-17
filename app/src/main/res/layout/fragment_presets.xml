@@ -34,6 +34,7 @@
     <ListView
         android:id="@+id/lv"
         android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
         android:layout_height="650dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"></ListView>
