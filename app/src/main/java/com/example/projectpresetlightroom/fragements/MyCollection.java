@@ -12,12 +12,6 @@ import android.view.ViewGroup;
 
 import com.example.projectpresetlightroom.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link MyCollection.OnFragmentInteractionListener} interface
- * to handle interaction events.
- */
 public class MyCollection extends Fragment {
 
     public MyCollection() {
