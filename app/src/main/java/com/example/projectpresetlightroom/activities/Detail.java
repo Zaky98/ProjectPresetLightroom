@@ -24,4 +24,8 @@ public class Detail extends AppCompatActivity {
         descs.setText(getIntent().getExtras().getString("desc"));
     }
 
+    public void how(View view) {
+        Intent intent = new Intent(this, HowItWorks .class);
+        startActivity(intent);
+    }
 }

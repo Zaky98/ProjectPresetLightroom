@@ -69,6 +69,44 @@ public class Presets extends Fragment {
                 new String[] {"list", "gbr"}, new int[] {R.id.tv_nama, R.id.imV});
         lv.setAdapter(Adapter);
 
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    int pos = (int) adapterView.getPositionForView(view);
+                    String poss = Integer.toString(pos);
+                    if(i == 0) {
+                        Toast.makeText(getActivity(), "You choose Summer", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getActivity(), Detail.class);
+                        intent.putExtra("title", "Summer");
+                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
+                        startActivity(intent);
+                    } else if(i == 1){
+                        Toast.makeText(getActivity(), "You choose Selfie", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getActivity(), Detail.class);
+                        intent.putExtra("title", "Summer");
+                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
+                        startActivity(intent);
+                    }   else if(i == 2) {
+                        Toast.makeText(getActivity(), "You choose Fall", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getActivity(), Detail.class);
+                        intent.putExtra("title", "Summer");
+                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
+                        startActivity(intent);
+                    }    else if(i == 3) {
+                        Toast.makeText(getActivity(), "You choose Jungle", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getActivity(), Detail.class);
+                        intent.putExtra("title", "Summer");
+                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
+                        startActivity(intent);
+                    } else if(i == 4) {
+                        Toast.makeText(getActivity(), "You choose Sunset", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getActivity(), Detail.class);
+                        intent.putExtra("title", "Summer");
+                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
+                        startActivity(intent);
+                    }
+                }
+        });
 
         return rootView;
     }
