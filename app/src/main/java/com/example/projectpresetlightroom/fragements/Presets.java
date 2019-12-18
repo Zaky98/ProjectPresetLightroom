@@ -1,6 +1,7 @@
 package com.example.projectpresetlightroom.fragements;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Image;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -36,6 +37,8 @@ public class Presets extends Fragment {
     String[] Pil;
     String[] Gbr;
     String[] pilgbr;
+    private int buttonState = 1;
+    Button location;
 
 
     public Presets() {
@@ -110,4 +113,5 @@ public class Presets extends Fragment {
 
         return rootView;
     }
+
 }
