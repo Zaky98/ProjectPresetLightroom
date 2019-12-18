@@ -1,117 +1,71 @@
 package com.example.projectpresetlightroom.fragements;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.media.Image;
-import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 
-import android.util.Log;
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.projectpresetlightroom.R;
-import com.example.projectpresetlightroom.activities.Detail;
-import com.example.projectpresetlightroom.activities.HowItWorks;
+import com.example.projectpresetlightroom.adapters.PresetAdapters;
+import com.example.projectpresetlightroom.models.PresetModel;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 
+/**
+ * A simple {@link Fragment} subclass.
+ */
 public class Presets extends Fragment {
 
-    protected ListView lv;
-    protected ListAdapter adapter;
-    SimpleAdapter Adapter;
-    HashMap<String, String> map;
-    ArrayList<HashMap<String, String>> mylist;
-    String[] Pil;
-    String[] Gbr;
-    String[] pilgbr;
-    private int buttonState = 1;
-    Button location;
-
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+    //instansiasi list superhero
+    List<PresetModel> listSuperHero = new ArrayList<>();
 
     public Presets() {
         // Required empty public constructor
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_presets, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_presets, container, false);
 
-        lv = (ListView) rootView.findViewById(R.id.lv);
+        rvSuperHero = view.findViewById(R.id.rvSuperHero);
 
-        Pil = new String[] {"Summer", "Selfie", "Fall", "Jungle", "Sunset"};
-        Gbr = new String[] {Integer.toString(R.drawable.summer),
-                Integer.toString(R.drawable.selfie),
-                Integer.toString(R.drawable.fall),
-                Integer.toString(R.drawable.jungle),
-                Integer.toString(R.drawable.sunset) };
+        //Membuat object hero
+        PresetModel hero = new PresetModel("Summer", R.drawable.summer);
+        //menambahkan hero ke listSuperHero
+        listSuperHero.add(hero);
+        //membuat object hero baru
+        hero = new PresetModel("Selfie", R.drawable.selfie);
+        ;
 
-        mylist = new ArrayList<HashMap<String,String>>();
+        //menambahkan hero baru ke listSuperhero
+        listSuperHero.add(hero);
 
-        for (int i = 0; i < Pil.length; i++){
-            map = new HashMap<String, String>();
-            map.put("list", Pil[i]);
-            map.put("gbr", Gbr[i]);
-            mylist.add(map);
-        }
+        hero = new PresetModel("Fall", R.drawable.fall);
+        listSuperHero.add(hero);
+        hero = new PresetModel("Jungle", R.drawable.jungle);
+        listSuperHero.add(hero);
+        hero = new PresetModel("Sunset", R.drawable.sunset);
+        listSuperHero.add(hero);
+        //Instansiasi Adapter
+        PresetAdapters superHeroAdapter = new PresetAdapters(listSuperHero);
+        //set adapter dan layoutmanager
+        rvSuperHero.setAdapter(superHeroAdapter);
+        rvSuperHero.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        Adapter = new SimpleAdapter(getContext(), mylist, R.layout.list_preset,
-                new String[] {"list", "gbr"}, new int[] {R.id.tv_nama, R.id.imV});
-        lv.setAdapter(Adapter);
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    int pos = (int) adapterView.getPositionForView(view);
-                    String poss = Integer.toString(pos);
-                    if(i == 0) {
-                        Toast.makeText(getActivity(), "You choose Summer", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getActivity(), Detail.class);
-                        intent.putExtra("title", "Summer");
-                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
-                        startActivity(intent);
-                    } else if(i == 1){
-                        Toast.makeText(getActivity(), "You choose Selfie", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getActivity(), Detail.class);
-                        intent.putExtra("title", "Summer");
-                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
-                        startActivity(intent);
-                    }   else if(i == 2) {
-                        Toast.makeText(getActivity(), "You choose Fall", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getActivity(), Detail.class);
-                        intent.putExtra("title", "Summer");
-                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
-                        startActivity(intent);
-                    }    else if(i == 3) {
-                        Toast.makeText(getActivity(), "You choose Jungle", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getActivity(), Detail.class);
-                        intent.putExtra("title", "Summer");
-                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
-                        startActivity(intent);
-                    } else if(i == 4) {
-                        Toast.makeText(getActivity(), "You choose Sunset", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getActivity(), Detail.class);
-                        intent.putExtra("title", "Summer");
-                        intent.putExtra("desc", "Luke Hobbs (Dwayne Johnson) membentuk aliansi yang tidak mungkin");
-                        startActivity(intent);
-                    }
-                }
-        });
-
-        return rootView;
+        return view;
     }
 
 }

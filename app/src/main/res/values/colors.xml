@@ -6,4 +6,6 @@
 
     <color name="dot_light_screen1">#ffffff</color>
     <color name="grey">#2a2a2a</color>
+    <color name="greylight">#A9A9A9</color>
+    #
 </resources>

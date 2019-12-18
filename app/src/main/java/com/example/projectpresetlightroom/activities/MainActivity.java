@@ -4,10 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,7 +13,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.projectpresetlightroom.R;
-import com.example.projectpresetlightroom.fragements.More;
 import com.example.projectpresetlightroom.fragements.MyCollection;
 import com.example.projectpresetlightroom.fragements.Presets;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

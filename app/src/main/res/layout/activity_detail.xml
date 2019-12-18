@@ -23,8 +23,8 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="594dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginBottom="159dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,11 +48,11 @@
 
     <TextView
         android:id="@+id/Penjelasan"
-        android:layout_width="336dp"
-        android:layout_height="81dp"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="22dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="32dp"
         android:text="Cara kerja"
         android:textColor="@color/dot_light_screen1"
         android:textSize="15dp"
@@ -80,14 +80,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="how"
-        android:text="How it works?"
-        android:textColor="@color/dot_light_screen1"
-        android:textSize="50dp"
+        android:text="How to apply a preset?"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.464" />
 
     <ImageView
         android:id="@+id/imageView"

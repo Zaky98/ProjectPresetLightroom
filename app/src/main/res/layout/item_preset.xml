@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="255dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,14 +17,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imV"
+            android:id="@+id/presetGambar"
             android:layout_width="361dp"
             android:layout_height="213dp"
             android:layout_marginEnd="1dp"
             android:src="@drawable/summer" />
 
         <TextView
-            android:id="@+id/tv_nama"
+            android:id="@+id/presetName"
             android:layout_width="275dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
