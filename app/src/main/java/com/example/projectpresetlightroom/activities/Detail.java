@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,15 +19,18 @@ public class Detail extends AppCompatActivity {
 
     public TextView title;
     public TextView descs;
+    public ImageView gbr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        gbr = findViewById(R.id.imageView);
         title = findViewById(R.id.judulpreset);
         descs = findViewById(R.id.Penjelasan);
         title.setText(getIntent().getExtras().getString("title"));
         descs.setText(getIntent().getExtras().getString("desc"));
+        gbr.setImageResource(getIntent().getExtras().getInt("gbr"));
     }
 
     public void how(View view) {

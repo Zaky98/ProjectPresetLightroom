@@ -23,7 +23,6 @@ import java.util.List;
 public class PresetAdapters extends RecyclerView.Adapter<PresetAdapters.MyViewHolder> {
 
     List<PresetModel> presetList;
-    Context c;
 
     public PresetAdapters(List<PresetModel> presetList) {
         this.presetList = presetList;
@@ -57,30 +56,35 @@ public class PresetAdapters extends RecyclerView.Adapter<PresetAdapters.MyViewHo
                 if (position == 0){
                     Toast.makeText(view.getContext(), "You choose Summer", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
+                    intent.putExtra("gbr", R.drawable.summer);
                     intent.putExtra("title", "Summer");
                     intent.putExtra("desc", "Beach, jungle, sea, desert, grass, sunset");
                     view.getContext().startActivity(intent);
                 } else if(position == 1){
                     Toast.makeText(view.getContext(), "You choose Selfie", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
+                    intent.putExtra("gbr", R.drawable.selfie);
                     intent.putExtra("title", "Selfie");
                     intent.putExtra("desc", "Selfie, potrait, perfect skin, bloggers, wedding, family");
                     view.getContext().startActivity(intent);
                 }   else if(position == 2) {
                     Toast.makeText(view.getContext(), "You choose Fall", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
+                    intent.putExtra("gbr", R.drawable.fall);
                     intent.putExtra("title", "Fall");
                     intent.putExtra("desc", "Fall, forest, foliage, potrait, landscapes");
                     view.getContext().startActivity(intent);
                 }   else if(position == 3) {
                     Toast.makeText(view.getContext(), "You choose Jungle", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
+                    intent.putExtra("gbr", R.drawable.jungle);
                     intent.putExtra("title", "Jungle");
                     intent.putExtra("desc", "Jungle, green color, waterfall");
                     view.getContext().startActivity(intent);
                 } else if(position == 4) {
                     Toast.makeText(view.getContext(), "You choose Sunset", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
+                    intent.putExtra("gbr", R.drawable.sunset);
                     intent.putExtra("title", "Sunset");
                     intent.putExtra("desc", "Sunset, sunrises, dark colors");
                     view.getContext().startActivity(intent);
