@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.projectpresetlightroom.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Detail extends AppCompatActivity {
 
@@ -40,6 +42,8 @@ public class Detail extends AppCompatActivity {
 
     public void favorit(View view) {
         Toast.makeText(this, "Add to My Collection", Toast.LENGTH_SHORT).show();
+
+
 //        Button but = findViewById(R.id.button);
 //        int color = ((ColorDrawable)but.getBackground()).getColor();
 //        int greylight = getResources().getColor(R.color.greylight);

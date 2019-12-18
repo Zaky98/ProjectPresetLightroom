@@ -12,24 +12,28 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="410dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="250dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="571dp"
-        android:layout_marginBottom="159dp"
+        android:layout_marginBottom="120dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/title"
@@ -38,7 +42,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="270dp"
         android:text="Great For :"
-        android:textColor="@color/dot_light_screen1"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/Penjelasan"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,9 +56,9 @@
         android:layout_height="57dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="22dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Cara kerja"
-        android:textColor="@color/dot_light_screen1"
+        android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +72,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginBottom="28dp"
         android:text="Judul Preset"
-        android:textColor="@color/dot_light_screen1"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/button"
@@ -81,7 +85,7 @@
         android:layout_height="wrap_content"
         android:onClick="how"
         android:text="How to apply a preset?"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,12 +96,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="363dp"
-        android:layout_height="311dp"
+        android:layout_width="355dp"
+        android:layout_height="373dp"
         app:layout_constraintBottom_toTopOf="@+id/judulpreset"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/jungle" />
 
     <Button
@@ -105,13 +111,13 @@
         android:layout_width="80dp"
         android:layout_height="37dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/greylight"
         android:onClick="favorit"
         android:text="Add"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.112" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

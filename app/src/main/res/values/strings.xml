@@ -1,7 +1,25 @@
 <resources>
     <string name="app_name">LIGHTROOM PRESETS</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="next">NEXT</string>
+        <string name="skip">SKIP</string>
+        <string name="start">LANJUT</string>
+
+        <string name="slide_1_title">Selamat Datang di iPerpusnas</string>
+        <string name="slide_1_desc">Dibuat oleh anak bangsa</string>
+
+        <string name="slide_2_title">Get 100+</string>
+        <string name="slide_2_desc">Presets</string>
+
+        <string name="slide_3_title">GET STARTED :)</string>
+        <string name="slide_3_desc">Wawasan mu akan menjadi luas</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="hint_name">Masukkan Nama Anda</string>
+        <string name="submit">Submit</string>
+        <string name="slide_1_text">Free Preset</string>
+        <string name="slide_1_text2">For</string>
+
 </resources>
 

@@ -17,6 +17,8 @@ import com.example.projectpresetlightroom.R;
 import com.example.projectpresetlightroom.activities.Detail;
 import com.example.projectpresetlightroom.models.PresetModel;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 

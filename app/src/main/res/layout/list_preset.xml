@@ -30,7 +30,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="120dp"
             android:text="TextView"
-            android:textColor="@color/dot_light_screen1"
+            android:textColor="@color/white"
             android:textSize="20dp" />
     </LinearLayout>
 

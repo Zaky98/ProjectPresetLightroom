@@ -4,20 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/lightroom"
+        android:icon="@mipmap/splash_bg2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/lightroom"
+        android:roundIcon="@mipmap/splash_bg2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Detail"></activity>
+        <activity android:name=".activities.Detail" />
         <activity android:name=".activities.HowItWorks" />
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activities.WelcomeActivity"></activity>
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.MainActivity"></activity>
     </application>
 
 </manifest>
