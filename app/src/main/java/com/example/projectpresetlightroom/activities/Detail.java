@@ -1,5 +1,7 @@
 package com.example.projectpresetlightroom.activities;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,8 +16,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.projectpresetlightroom.R;
+import com.example.projectpresetlightroom.models.PresetModel;
+import com.example.projectpresetlightroom.models.PresetModelCollect;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 public class Detail extends AppCompatActivity {
 
@@ -40,20 +49,43 @@ public class Detail extends AppCompatActivity {
         startActivity(intent) ;
     }
 
-    public void favorit(View view) {
-        Toast.makeText(this, "Add to My Collection", Toast.LENGTH_SHORT).show();
+    public void favorit(final View view) {
 
 
-//        Button but = findViewById(R.id.button);
-//        int color = ((ColorDrawable)but.getBackground()).getColor();
-//        int greylight = getResources().getColor(R.color.greylight);
-//        if(color == greylight){
-//            but.setBackgroundColor(Color.RED);
-//            Toast.makeText(this, "Add to My Collection", Toast.LENGTH_SHORT).show();
-//        } else {
-//            but.setBackgroundColor(greylight);
-//            Toast.makeText(this, "Delete from My Collection", Toast.LENGTH_SHORT).show();
-//        }
+        Intent i = getIntent();
+        final int gambar = i.getIntExtra("gbr", 0);
+        final String jdl = i.getStringExtra("title");
+        final String desc = i.getStringExtra("desc");
+
+
+        final DatabaseReference database = FirebaseDatabase.getInstance().getReference();
+
+        final PresetModelCollect pm = new PresetModelCollect();
+        pm.setPresetGambarcoll(gambar);
+        pm.setPresetNamecoll(jdl);
+        pm.setDesc(desc);
+
+        Query query = database.child("DataPreset").orderByChild("presetNamecoll").equalTo(jdl);
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    Toast.makeText(view.getContext(), "Preset already in My Collection", Toast.LENGTH_SHORT).show();
+                } else {
+                    database.child("DataPreset").push().setValue(pm).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(view.getContext(), "Add to My Collection", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 
 }

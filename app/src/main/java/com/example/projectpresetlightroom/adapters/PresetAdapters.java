@@ -83,6 +83,7 @@ public class PresetAdapters extends RecyclerView.Adapter<PresetAdapters.MyViewHo
                     intent.putExtra("title", "Jungle");
                     intent.putExtra("desc", "Jungle, green color, waterfall");
                     view.getContext().startActivity(intent);
+
                 } else if(position == 4) {
                     Toast.makeText(view.getContext(), "You choose Sunset", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
