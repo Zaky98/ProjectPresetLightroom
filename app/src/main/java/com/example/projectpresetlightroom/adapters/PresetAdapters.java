@@ -63,11 +63,11 @@ public class PresetAdapters extends RecyclerView.Adapter<PresetAdapters.MyViewHo
                     intent.putExtra("desc", "Beach, jungle, sea, desert, grass, sunset");
                     view.getContext().startActivity(intent);
                 } else if(position == 1){
-                    Toast.makeText(view.getContext(), "You choose Selfie", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(view.getContext(), "You choose selfie", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(view.getContext(), Detail.class);
                     intent.putExtra("gbr", R.drawable.selfie);
-                    intent.putExtra("title", "Selfie");
-                    intent.putExtra("desc", "Selfie, potrait, perfect skin, bloggers, wedding, family");
+                    intent.putExtra("title", "selfie");
+                    intent.putExtra("desc", "selfie, potrait, perfect skin, bloggers, wedding, family");
                     view.getContext().startActivity(intent);
                 }   else if(position == 2) {
                     Toast.makeText(view.getContext(), "You choose Fall", Toast.LENGTH_SHORT).show();

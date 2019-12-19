@@ -47,7 +47,7 @@ public class Presets extends Fragment {
         //menambahkan hero ke listSuperHero
         listSuperHero.add(hero);
         //membuat object hero baru
-        hero = new PresetModel("Selfie", R.drawable.selfie);
+        hero = new PresetModel("selfie", R.drawable.selfie);
         ;
 
         //menambahkan hero baru ke listSuperhero

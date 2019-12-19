@@ -21,5 +21,14 @@
         <string name="slide_1_text">Free Preset</string>
         <string name="slide_1_text2">For</string>
 
+
+        <string name="title">How it Works?</string>
+        <string name="step1">1. Install Adobe Lightroom application from the Google Play, it\'s free.</string>
+        <string name="step2">2. Find suitable preset, tap ‘Get/Open’ button. Choose purchase options you prefer. Then you’ll see message \"Adding photo to All Photos album\". It means preset already added to Lightroom.</string>
+        <string name="step3">3. Run Lightroom and open "Recently Added" folder. Find and open added preset. In the upper right corner tap  button and choose ‘Copy Settings’ (now your preset settings are saved).</string>
+        <string name="step4">4. In the upper left corner tap "back" button . Then in the bottom right corner tap button  and add photo that you want to apply preset settings.</string>
+        <string name="step5">5. When photo is added, in the upper right corner tap button  and choose Paste Settings’. Congratulation, your preset has applied! Not all preset settings can suit to defined photos. Change preset settings to get photo you like most.</string>
+        <string name="step6">6. In the upper right corner tap "share" button  and save photo with applied preset settings to ‘Camera Roll’ or choose other available options.</string>
+
 </resources>
 
