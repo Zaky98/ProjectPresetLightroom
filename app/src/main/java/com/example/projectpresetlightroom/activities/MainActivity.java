@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             startActivity(likeIng);
         } catch (ActivityNotFoundException e) {
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.instagram.com/luthfansa_/")));
+                    Uri.parse("https://www.instagram.com/folkindonesia/")));
         }
     }
 

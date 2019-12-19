@@ -83,7 +83,7 @@ public class Detail extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                System.out.println(databaseError.getDetails() + " " + databaseError.getMessage());
             }
         });
     }
