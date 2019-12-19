@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "484928080223",
+    "firebase_url": "https://projectpresetlightroom.firebaseio.com",
+    "project_id": "projectpresetlightroom",
+    "storage_bucket": "projectpresetlightroom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484928080223:android:c779c451c2a01008390eea",
+        "android_client_info": {
+          "package_name": "com.example.e_cinema"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484928080223-mboqa0k5mj38dmcjt8tp2inogkaoju55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_cinema",
+            "certificate_hash": "5de7c831719113c6732c8b57c80f6beb0c0d4229"
+          }
+        },
+        {
+          "client_id": "484928080223-a2uebert7s5o5d9t1o5u9mqcf0564jjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdSNnN4Ok8G15_BvQJSbOvXg0htf7MbAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484928080223-a2uebert7s5o5d9t1o5u9mqcf0564jjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
