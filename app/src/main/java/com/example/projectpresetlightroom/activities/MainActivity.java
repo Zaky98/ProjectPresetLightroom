@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     public void email(MenuItem item) {
         try{
-            Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "zakyluthfansa@gmail.com"));
+            Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "presetfree@gmail.com"));
             intent.putExtra(Intent.EXTRA_TEXT, "Hello, thanks for using our app. How we can help?");
             startActivity(intent);
         }catch(ActivityNotFoundException e){
