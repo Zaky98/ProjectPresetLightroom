@@ -57,7 +57,7 @@ public class Dummy extends Fragment {
 //            mylist.add(map);
 //        }
 //
-//        Adapter = new SimpleAdapter(getContext(), mylist, R.layout.list_preset,
+//        Adapter = new SimpleAdapter(getContext(), mylist, R.layout.list_dummy,
 //                new String[] {"list", "gbr"}, new int[] {R.id.tv_nama, R.id.imV});
 //        lv.setAdapter(Adapter);
 //
