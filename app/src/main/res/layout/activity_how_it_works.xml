@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimary"
@@ -7,4 +7,165 @@
     android:layout_height="match_parent"
     tools:context="com.example.projectpresetlightroom.activities.HowItWorks">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-128dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="361dp"
+            android:layout_height="37dp"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/step1"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="359dp"
+            android:layout_height="59dp"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/step2"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step1"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <ImageView
+            android:id="@+id/gbr2"
+            android:layout_width="306dp"
+            android:layout_height="213dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/step2" />
+
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="358dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/step3"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gbr2"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <ImageView
+            android:id="@+id/gbr3"
+            android:layout_width="224dp"
+            android:layout_height="372dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step3"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/step3" />
+
+        <TextView
+            android:id="@+id/step4"
+            android:layout_width="344dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/step4"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gbr3" />
+
+        <ImageView
+            android:id="@+id/gbr4"
+            android:layout_width="225dp"
+            android:layout_height="407dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step4"
+            app:layout_constraintVertical_bias="0.029"
+            app:srcCompat="@drawable/step4" />
+
+        <TextView
+            android:id="@+id/step5"
+            android:layout_width="355dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/step5"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gbr4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="218dp"
+            android:layout_height="418dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step5"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/step5" />
+
+        <TextView
+            android:id="@+id/step6"
+            android:layout_width="366dp"
+            android:layout_height="51dp"
+            android:fontFamily="@font/truenosbd"
+            android:text="@string/step6"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

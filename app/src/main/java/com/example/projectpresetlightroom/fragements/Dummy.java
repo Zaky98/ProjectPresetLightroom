@@ -41,7 +41,7 @@ public class Dummy extends Fragment {
 
 //        lv = (ListView) rootView.findViewById(R.id.lv);
 //
-//        Pil = new String[] {"Summer", "Selfie", "Fall", "Jungle", "Sunset"};
+//        Pil = new String[] {"Summer", "selfie", "Fall", "Jungle", "Sunset"};
 //        Gbr = new String[] {Integer.toString(R.drawable.summer),
 //                Integer.toString(R.drawable.selfie),
 //                Integer.toString(R.drawable.fall),
@@ -73,10 +73,10 @@ public class Dummy extends Fragment {
 //                        intent.putExtra("desc", "Beach, jungle, sea, desert, grass, sunset");
 //                        startActivity(intent);
 //                    } else if(i == 1){
-//                        Toast.makeText(getActivity(), "You choose Selfie", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getActivity(), "You choose selfie", Toast.LENGTH_SHORT).show();
 //                        Intent intent = new Intent(getActivity(), Detail.class);
-//                        intent.putExtra("title", "Selfie");
-//                        intent.putExtra("desc", "Selfie, potrait, perfect skin, bloggers, wedding, family");
+//                        intent.putExtra("title", "selfie");
+//                        intent.putExtra("desc", "selfie, potrait, perfect skin, bloggers, wedding, family");
 //                        startActivity(intent);
 //                    }   else if(i == 2) {
 //                        Toast.makeText(getActivity(), "You choose Fall", Toast.LENGTH_SHORT).show();

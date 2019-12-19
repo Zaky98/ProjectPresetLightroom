@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     public void email(MenuItem item) {
         try{
-            Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "zakyluthfansa@gmail.com"));
+            Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "info.folkindonesia@gmail.com"));
             intent.putExtra(Intent.EXTRA_TEXT, "Hello, thanks for using our app. How we can help?");
             startActivity(intent);
         }catch(ActivityNotFoundException e){
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     public void instagram(MenuItem item) {
-        Uri uri = Uri.parse("https://www.instagram.com/luthfansa_");
+        Uri uri = Uri.parse("https://www.instagram.com/folkindonesia");
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
         likeIng.setPackage("com.instagram.android");
