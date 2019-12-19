@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     public void instagram(MenuItem item) {
-        Uri uri = Uri.parse("https://www.instagram.com/folkindonesia");
+        Uri uri = Uri.parse("https://www.instagram.com/folkiindonesia");
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
         likeIng.setPackage("com.instagram.android");
